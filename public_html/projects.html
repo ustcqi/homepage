@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>About -Kerwin @ USTC</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/ustc.jpg" />
+  <!-- Standard reset, fonts and grids -->
+  <link rel="stylesheet" type="text/css" href="./styles/reset-fonts-grids.css" />
+  <!-- CSS for Menu -->
+  <link rel="stylesheet" type="text/css" href="./styles/sam/menu.css" />
+  <!-- Dependency source files -->
+  <script type="text/javascript" src="./styles/yahoo-dom-event.js" ></script>
+  <script type="text/javascript" src="./styles/container_core.js"></script>
+  <!-- Menu source file -->
+  <script type="text/javascript" src="./styles/menu.js"></script>
+  <!-- styles for the whole website -->
+  <link href="./styles/styles.css" rel="stylesheet" type="text/css" />
+  <!-- javascript for the menu -->
+  <script type="text/javascript">
+    YAHOO.util.Event.onContentReady("graphgardenmainmenu", function () {
+    var oMenu = new YAHOO.widget.Menu("graphgardenmainmenu", { position: "static", hidedelay:  0, lazyload: true }); oMenu.render(); });
+  </script>
+</head>
+
+<body class="yui-skin-sam" id="yahoo-com">
+  <div id="doc" class="yui-t1">
+  	<div id="hd">
+    	<div id="header">
+    		<img id="by-jure" src="./images/logo_empty.png" alt="By Jure Leskovec" />
+    		<img id="mld-logo" src="./images/logo_empty.png" alt="Machine Learning Department" />
+    		<a href="http://en.ustc.edu.cn/" target="_blank">
+    			<img id="stanford-logo" src="./images/logo-ustc.jpg" alt="USTC" />
+    		</a>
+    	</div>
+  	</div>
+
+  	<!-- START: left column -->
+  	<div id="left-column">
+  	<!--#include virtual="left_column.html" -->
+  		<a href="./images/face2.jpeg"><img id="jure-img" src="./images/face.jpg" alt="Jure Leskovec"  style="height:200px;width:158px;margin-left:31px"/></a>
+  		
+  		<div id="graphgardenmainmenu" class="yuimenu">
+    		<div class="bd">
+     			<center><a href="index.html">Home</a></center>
+     			<center><a href="about.html">About</a></center>
+     			<center><a href="http://demon.blog.ustc.edu.cn" target="_blank">Blog</a></center>
+     			<center><a href="photos.html">Photos</a></center>
+     		    <!-- 
+     			<center><a href="games.html">Games</a></center>
+     			-->
+     			<center><a href="projects.html">Projects</a></center>
+     		    <br/>
+     
+        		<center><a href="http://en.ustc.edu.cn" target="_blank">University of Science and Tecnology of China</a></center><br/>
+  	    		<center><a href="">qichao.cs@gmail.com</a></center>
+        		<center><a href="mailto:qichao.cs@gmail.com" onmouseover="mouseOver(this)" onmouseOut="mouseOut(this)">Contact Me</a> <p></center>
+  			</div>
+  		</div>
+    <br/>
+    
+    <!-- kerwin's sina weibo home link -->
+   <div id="graphgardenmainmenu" class="yuimenu">
+   	<center>
+  	  <a href="http://weibo.com/csdemon" target="_blank" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @Kerwin</a>
+  	</center>  
+   </div>
+ 	
+ 	</div>
+    <!-- END: left column -->
+
+  <!-- START: right column -->
+  <div id="right-column">
+  <div class="call-out-green"><div style="font-size:20px; padding:13px 0px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;";>Qi Chao ^_^ Kerwin.</div></div>
+  <a href="https://github.com/ustcqi/commodity_classification" target="_blank"><h1>Commodity Classification(Aisino)</h1></a>
+  	<h2><B style="color:green" >Project Description</B></h2>
+  	<ul>
+    	<p>
+    		This project mainly focus on commodity classification based on the data of tax invoice.
+    		The important data contaions hydm, hwmc and spbm meaning 行业代码, 名称, 商品编码 respectively.
+    		There are 20737 samples which has spbm.We must label the rest data dosn't has spbm.
+    	</p>
+      <li class="R">parsing unicode hwmc to single charactor and generating the charactors to bi-grams</li>
+      <li class="R">Using Naive Bayes model to classify the hwmc which without the spbm.</li>
+      <li class="R">Appending extra corpus to train a word embedding with word2vec</li>
+      <li class="R">Combining the single charactor vector,bi-gram vector and hwmc word embedding</li>
+      <li class="R">Blending several classifier, such as LR, SVM, Naive Bayes</li>
+      </li>
+    </ul>
+    
+  <a href="https://github.com/ustcqi/qyhx" target="_blank"><h1>Enterprise Portrait(Aisino)</h1></a>
+  	<h2><B style="color:green" >Project Description</B></h2>
+  	<ul>
+    	<p>
+    		This project mainly focus on Enterprise Portait based on the data of tax invoice.
+    		Currently we had developed several tags of the enterprise, such as the rapid growth，
+    		supply chain core business, cycloid type enterprises and so on.
+    	</p>
+      <li class="R">Spark big data analysis</li>
+      <li class="R">Calculate the periodicity of enterprise using AutoCorrelation  </li>
+      <li class="R">Linear Regression and EigenVector Centrality</li>
+      </li>
+    </ul>
+  <a href="./projects/ta.html" target="_blank"><h1>Travel Assistant(CAS)</h1></a>
+    <h2><B style="color:green" >Project Description</B></h2>
+  	<ul>
+      <p>
+      	This project is supported by the National Natural Science Foundation of China. 
+       	The project's full name is Internet-facing Mining and Cross-media Search Engine.
+      	The data of TA Knowledge Graph based on  BeiJing 1819 tourist attractions, 
+      	and a semantic search system implemented based on the Knowledge Graph, then return the tourists
+      	knowledge card based on the users' input key words.
+      	TA(Travel Assistant) system also supports image retrieval, users can upload attractions pictures 
+      	to retrieval the results.
+      </p>
+    </ul>
+ 
+  <a href="https://github.com/ustcqi/text_classification" target="_blank"><h1>Text classification with Python</h1></a>
+    <h2><B style="color:green">Project Description</B></h2>
+  	<ul>
+      <p>
+      This project mainly focus on the topic of text classification, 
+      including the english and chinese text.
+	  Several open projects have been used, such as Scikit-Learn, NLTK, Gensim, Numpy, Pandas, Matplotlib. 
+       <li class="R">Bag-of-Words and TFIDF as the representation of the text respectively</li>
+       <li class="R">SVM, Logistic Regression, Multiple Layer Perception(ANN), Random Forest as the Classifier</li>
+       <li class="R">Plot the results using matplotlib and stanford seaborn</li>
+       <li class="R">Scikit-Learn Machine Learning Pipeline, GridSearch, Cross-Validation...</li>
+      </p>
+    </ul>
+   
+   <h1>Image Classification/Detection with TensorFlow(CNN)</h1>
+    <h2><B style="color:green" >Project Description</B></h2>
+    
+  <h1>Text Generation with Keras(RNN/LSTM)</h1>
+    <h2><B style="color:green" >Project Description</B></h2>
+  </div>
+
+  <!-- END: right column -->
+  <div id="footer">
+    <!-- you can put something here -->
+  </div>
+
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</body>
+</html>
